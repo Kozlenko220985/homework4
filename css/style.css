@@ -3,3 +3,66 @@
 body{
 	background-image: url(../img/hw4_background.jpg);
 }
+
+.general{
+	width: 1000px;
+	height: 985px;
+	margin: 38px auto 32px auto;
+	background-color: #ffffff;
+}
+
+/*header*/
+
+.logo{
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+	height: 165px;
+}
+
+.header{
+	position: relative;
+}
+
+.header p{
+	float: right;
+	width: 121px;
+	margin-top: 10px;
+	margin-right: 30px;
+	font-family: Tahoma;
+	font-size: 12px;
+	line-height: 150%;
+	color: #128aa7;
+}
+
+.header p span{
+	font-weight: bold;
+}
+
+.countries{
+	position: absolute;
+	top: 110px;
+	right: 30px;
+}
+
+
+.countries div{
+	float: left;
+	margin-right: 10px;
+}
+
+.countries .margin_reset{
+	margin-right: 0;
+}
+
+.clearfix:after{
+	content: "";
+	clear: both;
+}
+
+/*img*/
+
+.image{
+	clear: both;
+	border-top: 1px solid #128aa7;
+}
