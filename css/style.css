@@ -2,12 +2,15 @@
 
 body{
 	background-image: url(../img/hw4_background.jpg);
+	background-position: 0 -38px;
+	font-family: Tahoma;
+	font-size: 12px;
 }
 
 .general{
 	width: 1000px;
 	height: 985px;
-	margin: 38px auto 32px auto;
+	margin: 0 auto;
 	background-color: #ffffff;
 }
 
@@ -25,10 +28,10 @@ body{
 }
 
 .header p{
-	float: right;
-	width: 121px;
-	margin-top: 10px;
-	margin-right: 30px;
+	position: absolute;
+	top:10px;
+	right: 30px;
+	width: 125px;
 	font-family: Tahoma;
 	font-size: 12px;
 	line-height: 150%;
@@ -58,11 +61,124 @@ body{
 .clearfix:after{
 	content: "";
 	clear: both;
+	display: block;
 }
 
 /*img*/
 
 .image{
-	clear: both;
+	height: 237px;
 	border-top: 1px solid #128aa7;
+	border-bottom: 1px solid #128aa7;
+}
+
+/*menu*/
+
+.menu:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.menu{
+	background-color: #333333;
+	height: 30px;
+	border-bottom: 1px solid #000000;
+}
+
+.menu li{
+	float: left;
+	position: relative;
+}
+
+.menu_padding{
+	padding-left: 65px;
+}
+
+.menu li a{
+	display: block;
+	text-decoration: none;
+	height: 28px;
+	padding-right: 65px;
+	padding-top: 4px;
+	outline:0;
+	color: white;
+	font-size: 14px;
+	font-family: Tahoma;
+}
+
+
+.drop{
+	background-image: url(../img/drop.png);
+	background-repeat: no-repeat;
+	background-position: 90px 12px;
+}
+
+.drop1{
+	background-image: url(../img/drop.png);
+	background-repeat: no-repeat;
+	background-position: 50px 12px;
+}
+
+.drop2{
+	background-image: url(../img/drop.png);
+	background-repeat: no-repeat;
+	background-position: 75px 12px;
+}
+
+.submenu {
+	display: none;
+	position: absolute;
+	background-color: #303030;
+	top: 29px;
+}
+
+.menu li:hover .submenu{
+	display: block;
+}
+
+
+.submenu>li>a{
+	display: block;
+	height: 24px; 
+	padding-left: 10px;
+	text-decoration: none;
+	outline:0;
+	color: white;
+	font-size: 14px;
+	font-family: Tahoma;
+}
+
+/* content */
+
+h2{
+	text-align: center;
+	font-family: Tahoma;
+	font-size: 18px;
+}
+
+
+.right{
+	float: right;
+	width: 210px;
+	height: 522px;
+	border-left: 1px solid #c7cacf;
+	background-color: #edeef0;
+	padding: 5px 20px 10px 5px;
+}
+
+.left{
+	float: left;
+	width: 210px;
+	height: 522px;
+	border-right: 1px solid #c7cacf;
+	background-color: #edeef0;
+	padding: 5px 20px 10px 5px;
+}
+
+footer{
+	margin: 10px auto;
+	width: 250px;
+	color: white;
+	font-size: 12px;
 }
