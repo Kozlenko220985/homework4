@@ -158,10 +158,16 @@ h2{
 }
 
 
+.content{
+	width: 1000px;
+	height: 539px;
+	overflow: hidden;
+}
+
 .right{
 	float: right;
 	width: 210px;
-	height: 522px;
+	height: 1000px;
 	border-left: 1px solid #c7cacf;
 	background-color: #edeef0;
 	padding: 5px 20px 10px 5px;
@@ -170,7 +176,7 @@ h2{
 .left{
 	float: left;
 	width: 210px;
-	height: 522px;
+	height: 1000px;
 	border-right: 1px solid #c7cacf;
 	background-color: #edeef0;
 	padding: 5px 20px 10px 5px;
